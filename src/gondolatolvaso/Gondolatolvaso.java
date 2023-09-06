@@ -17,14 +17,15 @@ public class Gondolatolvaso {
         }
         System.out.println();
     }
-    public void melyik() {
-        
+    public int melyik() {
+        int melyikOszlop = sc.nextInt();
+        return melyikOszlop;
     }
     public void kever() {
         
     }
-    public void ezVolt() {
-        
+    public void ezVolt(String kartya) {
+        System.out.println(kartya);
     }
     
 }
