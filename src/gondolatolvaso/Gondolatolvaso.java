@@ -22,15 +22,18 @@ public class Gondolatolvaso {
                 }
                 System.out.print(pakli[i] + "  ");
             }
-            int melyikOszlop = melyik();
+            melyik();
         }
         
     }
 
-    public int melyik() {
-        System.out.print("Melyik oszlop (1-3): ");
-        int melyikOszlop = sc.nextInt();
-        return melyikOszlop;
+    public void melyik() {
+        boolean jo;
+        do {            
+            System.out.print("Melyik oszlop (1-3): ");
+            int oszlop = sc.nextInt();
+            jo = oszlop >= 1 && oszlop <= 3;
+        } while (!jo);
     }
 
     public void kever() {
