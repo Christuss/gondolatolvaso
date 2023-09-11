@@ -7,7 +7,7 @@ public class Gondolatolvaso {
     public static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-
+        new gondolatolvaso.Gondolatolvaso().kirak();
     }
 
     public void kirak() {
@@ -28,6 +28,9 @@ public class Gondolatolvaso {
 
             }
 
+        }
+        for(int i = 0; i < pakli.length; i++) {
+            System.out.println(pakli[i]);
         }
     }
 
