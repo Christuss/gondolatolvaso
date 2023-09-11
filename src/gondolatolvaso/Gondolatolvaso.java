@@ -15,12 +15,20 @@ public class Gondolatolvaso {
         String[] szinek = {"P", "T", "Z", "M"};
         String[] ertekek = {"Ász", "Kir", "Fel", "X", "IX", "VIII"};
         
+        
+        int i = 1;
+        for (String szin : szinek) {
+            for (int e = 0; i < 22 && e < ertekek.length; e++) {
+                    pakli[i++] = szin + "_" + ertekek[e];
+            }
+        }
+        
         for (int j = 0; j < 3; j++) {
-            for (int i = 0; i < pakli.length; i++) {
-                if (i % 3 == 0) {
+            for (int f = 0; f < pakli.length; f++) {
+                if (f % 3 == 0) {
                     System.out.println();
                 }
-                System.out.print(pakli[i] + "  ");
+                System.out.print(pakli[f] + "  ");
             }
             melyik();
         }
@@ -40,8 +48,5 @@ public class Gondolatolvaso {
 
     }
 
-    public void ezVolt(String kartya) {
-        System.out.println(kartya);
-    }
 
-}
+    }
