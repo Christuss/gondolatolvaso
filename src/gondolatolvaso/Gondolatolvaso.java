@@ -28,7 +28,7 @@ public class Gondolatolvaso {
                 if (f % 3 == 1) {
                     System.out.println();
                 }
-                System.out.print(pakli[f] + "  ");
+                System.out.printf("%10s",pakli[f]);
             }
             System.out.println("");
             melyik();
