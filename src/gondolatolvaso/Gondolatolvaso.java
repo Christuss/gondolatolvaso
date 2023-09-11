@@ -3,7 +3,7 @@ package gondolatolvaso;
 import java.util.Scanner;
 
 public class Gondolatolvaso {
-    
+
     String[] pakli = new String[22];
 
     public static Scanner sc = new Scanner(System.in);
@@ -48,23 +48,29 @@ public class Gondolatolvaso {
 
     public void kever(int oszlop) {
         switch (oszlop) {
+            case 1:
+                for (int i = 1; i < 7; i++) {
+                    pakli[i] = pakli[20 - (i - 1) * 3];
+                    pakli[i + 7] = pakli[19 - (i - 1) * 3];
+                    pakli[i + 14] = pakli[21 - (i - 1) * 3];
+                }
+                break;
             case 2:
                 for (int i = 1; i < 7; i++) {
                     pakli[i] = pakli[19 - (i - 1) * 3];
-                    pakli[i+7] = pakli[20 - (i - 1) * 3];
-                    pakli[i+14] = pakli[21 - (i - 1) * 3];
+                    pakli[i + 7] = pakli[20 - (i - 1) * 3];
+                    pakli[i + 14] = pakli[21 - (i - 1) * 3];
                 }
                 break;
-                
+
             case 3:
                 for (int i = 1; i < 7; i++) {
                     pakli[i] = pakli[21 - (i - 1) * 3];
-                    pakli[i+7] = pakli[20 - (i - 1) * 3];
-                    pakli[i+14] = pakli[19 - (i - 1) * 3];
+                    pakli[i + 7] = pakli[20 - (i - 1) * 3];
+                    pakli[i + 14] = pakli[19 - (i - 1) * 3];
                 }
                 break;
         }
 
     }
-
 }
